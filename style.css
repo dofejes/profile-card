@@ -10,11 +10,8 @@ body {
   .profile-data {
     /*background-color: yellow;*/
   }
-  .contacts {
+  .content-contact {
     /*background-color: red;*/
-  }
-  .design {
-    /*background-color: violet;*/
   }
   /* CSS reset */
   * {
@@ -25,97 +22,126 @@ body {
   }
   body {  
     height: 100vh;
-    background: url('assets/bg_yoga.jpg')no-repeat center center fixed;
+    background: url('assets/balance.jpg')no-repeat center center fixed;
     background-size: cover;
     font-family: Garamond;
-    margin: 40px auto 40px 120px;
+    margin: 30px auto 40px 50px;
   }
   /* Pozicionálás */
   .profile-card {
-    width: 770px;
+    width: 580px;
     max-width: calc(100vw - 10px);
-    height: 530px;
-  }
-  .right {
-    float: right;
-  }
+    height: 900px;
+  }  
   .head {
-    width: 350px;
-    height: 540px;
+    width: 385px;
+    height: 320px;
     text-align: center;
+    margin-left: 90px;
+  }
+  img {
+    width: 150;
+    height: 150px;
+    border-radius: 35%;
+    background-color: rgb(227, 112, 12);
+    transition: all 1.3s ease-in-out;
+    filter: grayscale(5%);
+  }
+  img:hover {
+    transform: scale(1.1);
+    filter: grayscale(1%);
+  }
+  .profile-image {
+    margin-top: 35px;
+    height: 110px;    
   }
   .profile-data { 
     line-height: 2.5em;
-    padding: 20px;  
-    height: 250px;
-    color: rgba(141, 97, 13, 0.85);
-    box-shadow: 25px 1px 25px 4px rgba(211, 167, 9, .19);  
-  }
-  .dividient3 {
-    width: 350px;
-    height: 30px;
-    /*background-color: orange;*/
-  }
-  /* Contact links */
-  .contacts {
-    font-size: 23px;
-    line-height: 1.6em;  
-    padding: 7% 11%;  
-    height: 250px;
-    text-align: left;
-    box-shadow: -14px 7px 35px 12px rgba(18, 27, 93, 0.8);
-  }
+    padding: 35px;  
+    height: 210px;
+    color: rgba(74, 75, 85, 0.85);
+    box-shadow: 25px 5px 55px 10px rgba(18, 27, 93, 0.8);
+    border-radius: 9px;    
+  }  
   h1 {
-    font-size: 40px;
+    font-size: 35px;
     text-transform: uppercase;
     font-weight: bold;
     font-style: italic;
-    padding: 20px;
-  }
-  h2, h3, h4 {
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
+    padding: 15px;
+  }  
   h2 {
-    font-size: 30px;
+    font-size: 20px;    
+    text-transform: uppercase;    
   }
   h3 {
-    font-size: 24px;
+    font-size: 19px;
+  }
+  .dividient {
+    width: 580px;
+    height: 40px;
+  }
+  /* Tartalom */
+  .content-contact {
+    font-size: 25px;
+    line-height: 1.6em;  
+    width: 580px;
+    height: 500px;
+    text-align: left;
+    box-shadow: -15px 17px 35px 15px rgba(18, 27, 93, 0.8);
+    border-radius: 9px;
+  }  
+  .content {    
+    height: 400px;
+    text-align: justify;
+    padding: 5% 7%;
+    font-style: italic;
+    font-size: 21px;
+    /*background-color: orange;*/
+  }
+  .contact {    
+    height: 100px;
+    padding: 7% 7%;
+    /*background-color: pink;*/
+    text-align: center;
   }
   ul {
     list-style-type: none;
   }
-  .dividient1 {
-    width: 50px;
-    height: 540px;
-    /*background-color: orange;*/
-  }
-  .class1 {
-    width: 370px;
-    height: 250px;
-    /*background-color: orange;*/
-  }
-  .dividient2 {
-    width: 370px;
-    height: 30px;
-    /*background-color: orange;*/
-  }
-  .class2 {
-    width: 370px;
-    height: 250px;
-    /*background-color: pink;*/
-    text-align: justify;
-    padding: 32px 18px;
-    font-style: italic;
-    font-size: 18px;
-  }
-  .social-icon {
-    color: rgba(11, 18, 72, 1);
+  .social-icon {    
     font-size: 140%;
   }
   .social {
-    display: inline;
+    display: inline;    
   }
-  .fa-map-marker, .fa-envelope-o, .fa-phone {
-    color: rgba(11, 18, 72, 1);
+  .fa-envelope-o, .fa-phone, .social-icon {
+    color: rgba(11, 18, 72, 1);    
+  }
+  .fa-envelope-o {
+    transition: all 1.3s ease-in-out;
+    filter: grayscale(20%);
+  }
+  .fa-envelope-o:hover {
+    transform: scale(1.1);
+    filter: grayscale(15%);
+  }
+  .fa-envelope-o, .fa-phone, .fa-facebook-official, .fa-linkedin-square {
+    transition: all 1.3s ease-in-out;
+    filter: grayscale(20%);
+  }
+  .fa-envelope-o:hover {
+    transform: scale(1.3);
+    filter: grayscale(15%);
+  }
+  .fa-phone:hover {
+    transform: scale(1.3);
+    filter: grayscale(15%);
+  }
+  .fa-facebook-official:hover {
+    transform: scale(1.3);
+    filter: grayscale(15%);
+  }
+  .fa-linkedin-square:hover {
+    transform: scale(1.3);
+    filter: grayscale(15%);
   }
